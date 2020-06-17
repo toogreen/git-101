@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	font-family: helvetica;
+}
+
+.container{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify0-content: center;
+	align-items: center;
+}
+
+#logo {
+	
+}
