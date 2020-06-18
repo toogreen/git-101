@@ -8,10 +8,10 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify0-content: center;
+	justify-content: center;
 	align-items: center;
 }
 
 #logo {
-	
+	width: 80px;	
 }
