@@ -1,7 +1,9 @@
 body {
-	background-color: red;
+	background-color: green;
+	color: white;
 	margin: 0;
 	font-family: helvetica;
+	font-weight: lighter;
 }
 
 .container{
