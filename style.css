@@ -1,4 +1,3 @@
-
 /* For everything else than Mobile */
 body {
 	background-color: #264d00;
@@ -8,6 +7,10 @@ body {
 	font-weight: lighter;
 	text-shadow: 2px 2px #000000;
 	text-align: center;
+}
+
+p	{
+	font-size: 1.5em;
 }
 
 .container{
