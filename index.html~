@@ -8,12 +8,6 @@
 		<img id="logo" src="img/neverending-story.jpg">
 		<h1>Welcome to toogreen's website</h1>
 		<p>(coming soon)</p>
-
-		<!-- Social Media Links here -->
-		<a href="https://www.facebook.com/david.gagnon.toogreen">
-			<img src="img/hollow-cut-facebook.svg">
-		</a>
-
 	</div>
 </body>
 </html>
