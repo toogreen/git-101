@@ -28,13 +28,13 @@ p	{
 }
 
 .social  {
-	height: 30px;	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
 }
 
 .social-icons  {
 	width: 30px;	
-	float: left;
-	margin: 5px;
 }
 
 /* To invert SVG colors */
