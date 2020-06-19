@@ -71,7 +71,12 @@ svg {
 		font-size: +1.5em;
 	}
 
-	#logo {
-		width: 60%;	
+	.polaroid{
+		width: 50%;
 	}
+
+	.polaroid h1{
+		font-size: 1em;
+	}
+
 }
