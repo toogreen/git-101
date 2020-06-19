@@ -20,10 +20,11 @@ p	{
 	align-items: center;
 }
 
-#logo {
+.img-polaroid {
 	width: 100%;	
 	height: 85%;
 	object-fit: cover;
+	left: 0px;
 }
 
 .polaroid{
@@ -34,7 +35,6 @@ p	{
 	margin: 16px;
 	box-shadow:20px 20px 10px rgba(0,0,0,0.2);  
 	border-radius: 3px;
-	transform: rotate(-3deg);
 }
 
 .polaroid h1 {
@@ -42,6 +42,25 @@ p	{
 	font-size: 1.5em;
 	margin-top: 30px;
 }
+
+
+#polaroid-0 {
+	transform: rotate(-5deg);
+	z-index: 1000;
+	left: -5%;
+	position: relative;
+}
+
+
+#polaroid-1 {
+	transform: rotate(+8deg);
+	z-index: 500;
+	position: absolute;
+	top: 10%;
+	left: 37%;
+}
+
+
 
 .social  {
 	display: grid;
@@ -66,13 +85,13 @@ svg {
 
 
 /* For Mobile only */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 	body {
 		font-size: +1.5em;
 	}
 
 	.polaroid{
-		width: 50%;
+		width: 40%;
 	}
 
 	.polaroid h1{
