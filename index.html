@@ -25,6 +25,9 @@
 	<div class="container">
 
 
+		<a href="#"><div id="pause" class="pause"></div></a>
+
+
 		<div class="polaroid" id="polaroid-1">
 			<img class="img-polaroid" src="img/flo.jpg">
 		</div>
@@ -78,10 +81,69 @@
 			</a>-->
 
 		</div>
-
-
-
-
 	</div>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function(){
+
+	// loader la musique d'avance
+	var audioElement1 = document.createElement('audio');
+
+	audioElement1.setAttribute('src', 'sound/neverending-story.mp3'); // Fonctionne juste sous webkit browsers
+
+	if ($.browser.mozilla || $.browser.opera) {
+	    audioElement1.setAttribute('src', 'sound/neverending-story.ogg'); // Pour que ça joue partout
+	}
+
+	// Vu que la musique joue pas encore on definie une variable qui servira pour notre bouton play/pause plus tard
+	var audioplaying = false;
+
+    // Si on clique sur le polaroid
+    $("#polaroid-0").click(function(){
+
+
+     	// Empecher qu'on puisse cliquer a nouveau dessus
+     	$(this).unbind('click');
+
+
+      	// Pars la musique!
+      	audioElement1.play();
+
+      	// On averti notre variable qu'on joue maintenant
+      	audioplaying = true;
+
+      	// On affiche les boutons pause et reload
+      	$("#pause").css({'display':'block', 'opacity':'1'})
+
+    });
+
+    // If we click sur bouton, pause musique
+    $("#pause").click(function(){
+
+    	if(audioplaying == true){
+    		    	
+			// STOP la musique!
+      		audioElement1.pause();
+      		audioplaying = false;
+      		$("#pause").css('background', 'url(img/sound-off.png)');
+
+    	} else {
+    		// PLAY la musique!
+      		audioElement1.play();
+      		audioplaying = true;
+      		$("#pause").css('background', 'url(img/sound-on.png)');
+    	}
+    });
+
+
+}); // fin du jQuery
+
+</script>
+
+	
 </body>
 </html>

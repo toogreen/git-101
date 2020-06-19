@@ -84,6 +84,22 @@ svg {
 }
 
 
+/*Bouton pause*/
+#pause{
+  background: url('img/sound-on.png');
+  position: absolute;
+  top: 5px;
+  right: 75px;
+  width: 70px;
+  height: 70px;
+  opacity: 0px;
+  display: none;
+  transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7); /* IE 9 */
+  -webkit-transform: scale(0.7,0.7); /* Safari and Chrome */
+}
+
+
 /* For Mobile only */
 @media only screen and (max-width: 1400px) {
 	body {
