@@ -24,8 +24,9 @@
 	
 	<div class="container">
 
-
-		<a href="#"><div id="pause" class="pause"></div></a>
+	<!-- Boutons pause et reload -->
+	<a href="#"><div id="pause" class="pause"></div></a>
+	<a href="#"><div id="reload" class="reload"></div></a>
 
 
 		<div class="polaroid" id="polaroid-1">
@@ -118,6 +119,7 @@ jQuery(document).ready(function(){
 
       	// On affiche les boutons pause et reload
       	$("#pause").css({'display':'block', 'opacity':'1'})
+      	$("#reload").css({'display':'block', 'opacity':'1'})
 
     });
 
@@ -138,6 +140,20 @@ jQuery(document).ready(function(){
       		$("#pause").css('background', 'url(img/sound-on.png)');
     	}
     });
+
+    // Pour les mouse-over sur le bouton reload
+	$( "#reload" ).mouseenter(function() {
+	  $(this).css('background', 'url(img/reload-hover.png)');
+	});
+
+	$( "#reload" ).mouseleave(function() {
+	  $(this).css('background', 'url(img/reload.png)');
+	});
+
+	// Si on clique sur le bouton reload on reload la page
+	$( "#reload" ).click(function() {
+	  location.reload();
+	});
 
 
 }); // fin du jQuery

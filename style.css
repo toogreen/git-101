@@ -99,6 +99,22 @@ svg {
   -webkit-transform: scale(0.7,0.7); /* Safari and Chrome */
 }
 
+/*Bouton reload*/
+#reload{
+  background: url('img/reload.png');
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 70px;
+  height: 70px;
+  opacity: 0px;
+  display: none;
+  transform: scale(0.5,0.5);
+  -ms-transform: scale(0.5,0.5); /* IE 9 */
+  -webkit-transform: scale(0.5,0.5); /* Safari and Chrome */
+}
+
+
 /* Make things shake */
 
 .polaroid:hover {
