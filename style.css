@@ -12,6 +12,14 @@ p	{
 	font-size: 1.5em;
 }
 
+a{
+	color: white;
+}
+
+h5{
+	font-weight: normal;
+}
+
 .container{
 	height: 100vh;
 	display: flex;
